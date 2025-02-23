@@ -1,8 +1,10 @@
 const Header = () => {
     return (
       <header>
-        <h1>React useState</h1>
+        <div class="container">
+            <h1>Learn Web development</h1>
+        </div>
       </header>
-    );
-  }
+    )
+};
 export default Header;
