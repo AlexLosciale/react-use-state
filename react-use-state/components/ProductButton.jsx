@@ -31,14 +31,16 @@ const ProductButton = () => {
           description: "ReactJS è una libreria JavaScript per costruire interfacce utente, in particolare applicazioni a pagina singola. Consente agli sviluppatori di creare componenti UI riutilizzabili e di gestire efficacemente lo stato dell'applicazione."
         }
     ];
-  return (
-    <div>
-      {languages.map((language) => (
-        <div key={language.id} className="Buttons">
-          <button>{language.title}</button>
+
+    return (
+        <div className="Button2">
+            {languages.map((language) => (
+                <div key={language.id} className="Buttons">
+                    <button>{language.title}</button>
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
+
 export default ProductButton;

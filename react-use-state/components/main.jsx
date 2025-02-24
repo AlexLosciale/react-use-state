@@ -1,12 +1,12 @@
-import ProductButton from "./ProductButton";
+import ProductButton from "./ProductButton.jsx";
 
 const Main = () => {
     return (
       <main>
         <ProductButton />
-        <div class="content">
+        <div className="content">
             <h2>HTML</h2>
-            <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. 
+            <p>HTM (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. 
                 Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.
             </p>
         </div>
