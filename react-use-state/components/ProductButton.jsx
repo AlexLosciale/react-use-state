@@ -1,4 +1,4 @@
-const ProductButton = () => {
+const ProductButton = ({ onSelect }) => {
     const languages = [
         {
           id: 1,
@@ -31,16 +31,17 @@ const ProductButton = () => {
           description: "ReactJS è una libreria JavaScript per costruire interfacce utente, in particolare applicazioni a pagina singola. Consente agli sviluppatori di creare componenti UI riutilizzabili e di gestire efficacemente lo stato dell'applicazione."
         }
     ];
-
     return (
-        <div className="Button2">
-            {languages.map((language) => (
-                <div key={language.id} className="Buttons">
-                    <button>{language.title}</button>
-                </div>
-            ))}
-        </div>
-    );
+      <div className="Button2">
+          {languages.map((language) => (
+              <button 
+                  key={language.id} 
+                  onClick={() => onSelect(language.description)}>
+                  {language.title}
+              </button>
+          ))}
+      </div>
+  );
 };
 
 export default ProductButton;
